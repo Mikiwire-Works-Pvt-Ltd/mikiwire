@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 243, 244, 246;
+  /* Titanium White */
+  --background-start-rgb: 10, 10, 10;
+  /* Void Black */
+  --background-end-rgb: 31, 41, 55;
+  /* Gunmetal */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))) fixed;
+}
+
+/* Custom Utilities for 3D/GSAP */
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: all;
+  /* Allow interaction */
+}
+
+.hud-overlay {
+  pointer-events: none;
+  /* Let clicks pass through to canvas */
+  z-index: 10;
+}
+
+.hud-interactive {
+  pointer-events: auto;
+}
