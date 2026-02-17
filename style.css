@@ -99,13 +99,16 @@ section {
 
 /* --- Header --- */
 header {
-    background-color: var(--bg-light);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    /* Midnight Blue Background */
+    color: var(--text-light);
+    /* White Text */
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow */
     transition: padding 0.3s ease;
 }
 
@@ -131,6 +134,8 @@ header.scrolled {
     /* Adjust size as needed */
     width: auto;
     transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+    /* Make logo white */
 }
 
 .logo:hover .logo-img {
@@ -146,10 +151,13 @@ header.scrolled {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    /* Slightly larger */
     letter-spacing: 1px;
-    color: var(--secondary-color);
+    color: var(--text-light);
+    /* White text */
     position: relative;
+    padding: 5px 0;
 }
 
 .nav-link::after {
@@ -157,9 +165,10 @@ header.scrolled {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    /* Silver underline */
     transition: width 0.3s ease;
 }
 
@@ -167,12 +176,18 @@ header.scrolled {
     width: 100%;
 }
 
+.nav-link:hover {
+    color: var(--accent-color);
+    /* Silver text on hover */
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--text-light);
+    /* White icon */
     cursor: pointer;
 }
 
