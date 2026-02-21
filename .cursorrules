@@ -1,0 +1,28 @@
+# Miki Wire Works - AI Memory Core
+
+This file contains the strict architectural and contextual baseline for the Miki Wire Works web application. All future code modifications and generation must strictly adhere to these rules.
+
+## 1. Tech Stack
+- **Framework:** Next.js (App Router strictly required).
+- **Styling:** Tailwind CSS.
+- **Icons:** Lucide React icons ONLY.
+
+## 2. Aesthetic & Design System
+- **Theme:** Cinematic Heavy Industry (Dark Theme).
+- **Colors:**
+  - Background: Strict dark mode `#050505`.
+  - Accent/Primary: `#ff4500` (Orange/Red).
+- **Utilities:** Maintain and actively use the `.bg-grid` utility defined in `globals.css` for background texture.
+- **Rule:** NEVER use white backgrounds for main sections. The application must maintain its cinematic, high-end "Kyndryl-grade" architecture and heavy industry aesthetic at all times.
+
+## 3. Data Integrity & Factual Baseline
+NEVER hallucinate steel grades, capacities, or IS codes. ALWAYS reference the established Miki Group data hardcoded into the project:
+  - **Revenue:** ₹242 Cr
+  - **Capacity:** 100k MT
+  - **Market Share:** 20% Railway Share
+  - **IS Codes:** 14268, 6003, 4454
+  - **Factories:** Four specialized factory locations.
+
+## 4. Code Output & Formatting
+- **Completeness:** ALWAYS output fully complete React components.
+- **No Shortcuts:** NO placeholder comments such as `// ... rest of code`. Every generated file must be ready to copy, paste, and compile without missing chunks.
